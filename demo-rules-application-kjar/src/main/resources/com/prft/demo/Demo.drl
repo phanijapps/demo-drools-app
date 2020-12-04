@@ -1,0 +1,22 @@
+package com.prft.demo;
+
+import com.prft.demo.model.ProductPricing;
+
+dialect  "mvel"
+
+
+rule "Gold Customer"
+when
+  
+   cf : ProductPricing( membershipLevel == "Gold")
+then
+   cf.discount = 20;
+end
+
+rule "Silver Customer"
+when
+  
+   cf : ProductPricing( membershipLevel == "Silver")
+then
+   cf.discount = 10;
+end

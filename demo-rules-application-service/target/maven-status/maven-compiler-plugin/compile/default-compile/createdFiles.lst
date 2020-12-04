@@ -1,0 +1,4 @@
+com/prft/demo/service/Application.class
+com/prft/demo/service/KieServiceImpl.class
+com/prft/demo/service/DemoController.class
+com/prft/demo/service/DefaultWebSecurityConfig.class
